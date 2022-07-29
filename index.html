@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto</title>
+    <meta name="description" content="Blog da kenzie sobre tecnologia">
+    <title>Blog Kenzie Academy</title>
+    <link rel="icon"
+        href="data:image/png;base64,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" />
 </head>
+
 <body>
-    <h1>teste</h1>
+    <section>
+        <h1>Blog da Kenzie</h1>
+    </section>
+    <br>
+    <section>
+        <h2>Como aprender programar do zero: passo a passo</h2>
+        <article>
+            <p>Quer entrar em um mercado de trabalho que não para de crescer, mas não sabe por onde começar? Pela
+                programação. A
+                programação é uma das áreas que demandará quase 800 mil profissionais até 2025. Acompanhe esse passo a
+                passo
+                até
+                o final para <strong>aprender como programar do zero.</strong> Boa leitura!</p>
+            <cite>Escrito por: Daniel Kringer</cite>
+        </article>
+        <br><br>
+        <a href="https://kenzie.com.br/blog/como-aprender-a-programar-2/" target="_blank">Acessar post</a>
+    </section>
+    <section>
+        <h2>Onde encontrar desnvolvedores para sua vaga</h2>
+        <article>
+            <p>Seja uma contratação pontual para um projeto, ou uma contratação fixa e até mesmo um profissional de
+                manutenção,
+                por exemplo, esse processo seletivo pode não ser muito simples para profissionais recrutadores
+                não-familiarizados com a área</p>
+            <cite>Escrito por: Ugo Roveda</cite>
+        </article>
+        <br><br>
+        <a href="https://kenzie.com.br/blog/como-contratar-desenvolvedor/" target="_blank">Acessar post</a>
+    </section>
+    <section>
+        <h2>Aplicação de estrutura de repatição while em C, C#, JAVA e PHYTON</h2>
+        <article>
+            <p>A aplicação de estrutura de repetição<strong> while</strong> em C, C#, JAVA e Python é um recurso para programadores
+                organizarem e
+                realizarem testes em blocos de código. Dessa forma, é possível testar variáveis de<strong> condição e contadores</strong>
+                ao
+                longo do software. Ao aplicar a estrutura<strong> while</strong>, evitam-se repetições. Vamos mostrar como é a estrutura
+                e
+                como
+                ela pode ser usada abaixo. Boa leitura!</p>
+            <cite>Escrito por: Ugo Roveda</cite>
+        </article>
+        <br><br>
+        <a href="https://kenzie.com.br/blog/estrutura-de-repeticao-while/" target="_blank">Acessar post</a>
+    </section>
+    <section>
+        <h2>O que é linguagem de modelagem unificada e para que serve?</h2>
+        <article>
+            <p>Em qualquer atividade profissional, ter um guia bem definido, com uma linguagem comum, ilustrado e de
+                <strong>fácil
+                compreensão</strong> para todos os profissionais, pode ser a vantagem competitiva que a empresa procura. Mas não
+                só
+                isso,
+                pode ser também uma forma de auxiliar todos os envolvidos através da organização. <strong>Com organização todos
+                podem
+                unir forças</strong> para um objetivo comum.</p>
+            <cite>Escrito por: Daniel Kriger</cite>
+        </article>
+        <br><br>
+        <a href="https://kenzie.com.br/blog/linguagem-de-modelagem-unificada/" target="_blank">Acessar post</a>
+    </section>
+    <br><br>
+    <h2>Deseja receber nossas notícias em primeira mão?</h2>
+    <p>Basta inserir o seu e-mail aqui de preferência</p>
+    <form>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="Digite seu e-mail aqui" required id="email" />
+        <button type="submit">Receber notícias</button>
+    </form>
 </body>
+
 </html>
